@@ -5,6 +5,18 @@
     font-family: "Fira Sans", sans-serif;
 }
 
+@keyframes pulse {
+    50%{
+        transform: scale(75%);
+    }
+    100%{
+        transform: scale(100%);
+    }
+}
+.fa-record-vinyl{
+    animation: pulse 2s linear infinite;
+}
+
 nav{
     background: lightsteelblue;
     height: 50px;
@@ -35,6 +47,8 @@ nav{
 }
 .navitems__item:hover{
     background-color: cornflowerblue;
+    transition: scale 0.5s;
+    scale: 105%;
 }
 
 
